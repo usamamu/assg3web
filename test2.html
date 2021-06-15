@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./test2.js"></script>
+    <style>
+
+    #input{
+     float:right;
+     border : 1px solid;
+     height: auto;
+     width: fit-content;
+ }
+ #myform{
+   margin-left: 20px;
+   border : 1px solid;
+ }
+ .form-container{
+  border : 1px solid;
+  max-width: fit-content;
+ }
+ </style>
+</head>
+<body>
+ <div id=input></div>
+    </style>
+</head>
+<body>
+
+<h2></h2>>Popup Form</h2>
+<p>ALL fileds are neccessary so once you fill them all add button will be enabeld</p>
+<p><b>Data is shared in  local restfull api</b></p>
+
+<div id=input ></div>
+<div id=ip>error</div>
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+    <h2>ADD DELETE GET UPDATE</h2>
+    <label for="email"><b>NAME</b></label><br>
+    <input type="text" placeholder="Enter name" id=name required><br>
+
+    <label for="psw"><b>Email</b></label><br>
+    <input type="text" placeholder="Enter email" id=email required><br>
+
+    <label ><b>GENDER</b></label><br>
+    <input type="radio" id="male" name="gender" value="m" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="f" required>
+    <label for="female">Female</label><br>
+    <label ><b>PHONE NUMBER</b></label><br>
+    <input type="text" placeholder="Enter phone number" id=number ><br>
+    
+    <label ><b>Address</b></label><br>
+    <input type="text" placeholder="Enter street" id=street required ><br>
+    <input type="text" placeholder="Enter city" id=city required><br>
+    <input type="text" placeholder="Enter country" id=country required><br>
+
+    <button type="button" class="btn" id="addbtn" >ADD DATA</button>
+    <button type="button" class="btn" id="upd"> UPDATE</button>
+    <input type="hidden" id=_id><br>
+
+  </form>
+</div>
+
+<script>
+
+
+
+</script>
+
+</body>
+</html>
